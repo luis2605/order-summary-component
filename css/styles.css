@@ -1,0 +1,106 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+body {
+  margin: 0;
+  background-image: url("/images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+
+  width: 100%;
+  background-color: hsl(225, 100%, 94%);
+}
+
+/* layout */
+
+.container-locker {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 3em 0.5em;
+}
+.container {
+  margin: 2em 1em;
+  background: hsl(225, 100%, 98%);
+  border-radius: 15px;
+
+  padding-bottom: 3em;
+}
+.img-top {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.anual-plan-container {
+  background: hsl(228, 33%, 96%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em 1.5em;
+  padding: 1em 0.5em;
+  border-radius: 15px;
+}
+
+/* typo */
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+
+  color: hsl(224, 23%, 55%);
+}
+td {
+  color: hsl(224, 23%, 55%);
+}
+th {
+  font-weight: 900;
+}
+/* buttons */
+.change-btn:hover {
+  text-decoration: none;
+}
+.btn {
+  margin: 2em 1.5em;
+  text-align: center;
+  padding: 1em 0.5em;
+  display: block;
+  border-radius: 15px;
+  text-decoration: none;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  box-shadow: 2px 22px 21px -2px rgb(0 0 255 / 20%);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: hsl(245, 75%, 75%);
+  cursor: grab;
+}
+
+.cancel {
+  display: block;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+.cancel:hover {
+  color: black;
+  cursor: grab;
+}
+/* media queries */
+
+@media (min-width: 376px) {
+  body {
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: hsl(225, 100%, 94%);
+  }
+}
